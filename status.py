@@ -16,9 +16,5 @@ def getStatus():
         retVal = retVal + name + ', '
     return render_template('results.html', names=rules['players'], rule=rules['motd'], number=rules['numplayers'])
 
-@app.route('/asdf')
-def asdf():
-    render_template('results.html')
-
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
